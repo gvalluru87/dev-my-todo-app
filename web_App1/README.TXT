@@ -2,18 +2,14 @@ https://github.com/gvalluru87/dev-my-todo-app
 
 This my 1st python web app on streamlit
 
+run this command to generate a requirements.txt file here in the project directory.
 
-…or create a new repository on the command line
-echo "# dev-my-todo-app" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/gvalluru87/dev-my-todo-app.git
-git push -u origin main
+pip freeze > requirements.txt
 
+This is a file which will be uploaded to the server where we host this web app. So that server should know all the Python libraries the server needs to install in order to run the
+web app correctly. So the server has Python installed and even though it does have Python installed, it doesn't have all
+the packages available third party packages.
 
-…or push an existing repository from the command line
-git remote add origin https://github.com/gvalluru87/dev-my-todo-app.git
-git branch -M main
-git push -u origin main
+So you have to tell that server what packages your app needs to run correctly. And these are the packages that our app uses.
+
+So we installed Streamlit only.
